@@ -9,7 +9,7 @@ import sys
 
 scrollphat.set_brightness(14)
 scrollphat.set_rotate(True)
-client = stravalib.client.Client(access_token="yourStravaAPIKey") # replace this with your Strava API key
+client = stravalib.client.Client(access_token="e6f3c6066a88d7a3c67e413ca563ccdd54cc12a2") # replace this with your Strava API key
 #Getting token: https://pythonhosted.org/stravalib/usage/auth.html
 
 km_per_pixel = 5.0 #each pixel in the chart represents this many km in the activity, rounded up to the next pixel
@@ -26,6 +26,12 @@ totaldistance = 0
 today = datetime.date.today()
 monday = today - datetime.timedelta(days=today.weekday())
 mondaypst = str(monday) + "T07:00:00Z"
+
+# Create race day countdown timer
+todayDate = datetime.datetime.now()
+raceDay = datetime.datetime(2018, 4, 28)
+delta = raceDay - todayDate
+daysLeft = delta.days
 
 def sortby(item):
     return item.start_date
@@ -81,8 +87,8 @@ while True: #Loop this bit forever
         time.sleep(tickduration)
 
         if screen==0:
-#            drawgraph(bargraph) # Draw the bar chart
-            scrollphat.write_string("%.0f" % totaldistance) #Show the total distance on the screen
+#            show the number of days left until race
+            scrollphat.write_string("%.0f" % daysLeft) #Show days until race on screen
 
         if screen==1:
             scrollphat.write_string("%.0f" % totaldistance) #Show the total distance on the screen
