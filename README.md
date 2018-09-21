@@ -4,6 +4,8 @@
 
 This script will visualize both data points on a little LED matrix.
 
+![alt text](https://github.com/PTPells/StravaPi/blob/master/stravapi.jpg)
+
 ## What does this do?
 
 This script will visualize your Strava running stats on a Raspberry Pi, equipped with a Scroll pHAT LED matrix. Right now, the LED displays two data points: 1) Your total miles run since the beginning of the week and 2) The number of days remaining until your next race (read: any user-defined date)
