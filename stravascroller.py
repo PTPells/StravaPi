@@ -13,7 +13,7 @@ logging.debug('Start of program')
 
 scrollphat.set_brightness(14)
 scrollphat.set_rotate(True)
-client = stravalib.client.Client(access_token="e6f3c6066a88d7a3c67e413ca563ccdd54cc12a2") # replace this with your Strava API key
+client = stravalib.client.Client(access_token="your-api-key-goes-here") # replace this with your Strava API key
 #Getting token: https://pythonhosted.org/stravalib/usage/auth.html
 
 km_per_pixel = 5.0 #each pixel in the chart represents this many km in the activity, rounded up to the next pixel
