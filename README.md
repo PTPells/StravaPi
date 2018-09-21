@@ -4,7 +4,7 @@
 
 This script will visualize both data points on a little LED matrix.
 
-![alt text](https://github.com/PTPells/StravaPi/blob/master/stravapi.jpg)
+![alt text](https://github.com/PTPells/StravaPi/blob/master/stravapi.jpg = 250)
 
 ## What does this do?
 
