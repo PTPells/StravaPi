@@ -25,4 +25,4 @@ Right now, the LED displays two data points:
 
 ## Creating your own
 
-See @solipsia's thorough instructions on his Instructables [page](http://www.instructables.com/member/solipsia/).
+See @solipsia's [excellent] Instructables [tutorial](http://www.instructables.com/member/solipsia/).
